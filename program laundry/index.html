@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FiddLaundry</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel ="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo"> FiddLaundry</div>
+      <ul class="nav-links">
+        <li><a href="#" onclick="showPage('home')" class="nav-link active" id="nav-home">Beranda</a></li>
+        <li><a href="#" onclick="showPage('pesan')" class="nav-link" id="nav-pesan">Pesan</a></li>
+        <li><a href="#" onclick="showPage('lacak')" class="nav-link" id="nav-lacak">Lacak</a></li>
+        <li><a href="#" onclick="showPage('admin')" class="nav-link nav-admin" id="nav-admin">Admin</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE: HOME / TENTANG KAMI -->
+  <div id="page-home" class="page active">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">✨ Laundry Terpercaya #1</div>
+        <h1 class="hero-title">Pakaian <span class="highlight">Bersih</span>,<br/>Wangi & Rapi.</h1>
+        <p class="hero-desc">Serahkan cucian kamu pada kami. Kami menggunakan deterjen premium dan layanan cepat tanggap untuk kepuasan kamu.</p>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="showPage('pesan')">Pesan Sekarang →</button>
+          <button class="btn-ghost" onclick="showPage('lacak')">Lacak Pesanan</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Pelanggan</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">24 Jam</span><span class="stat-label">Layanan</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">4.9 ⭐</span><span class="stat-label">Rating</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-float">
+          <div class="float-icon">👕</div>
+          <div class="float-text"><strong>Kiloan</strong><br/><small>Rp 8.000/kg</small></div>
+        </div>
+        <div class="hero-card-float float-2">
+          <div class="float-icon">✅</div>
+          <div class="float-text"><strong>Selesai!</strong><br/><small>LND-2515</small></div>
+        </div>
+        <div class="hero-wash-anim">
+          <div class="wash-circle">
+            <div class="wash-inner">🫧</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section class="about-section" id="tentang">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-tag">Tentang Kami</div>
+          <h2 class="section-title">Kenapa Pilih <span class="highlight">FiddLaundry?</span></h2>
+          <p class="section-sub">Kami hadir untuk membantu kamu menghemat waktu dengan layanan laundry berkualitas tinggi.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon"></div>
+            <h3>Proses Cepat</h3>
+            <p>Cucian selesai dalam 1–2 hari kerja. Butuh ekspres? Kami siap!</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"></div>
+            <h3>Deterjen Premium</h3>
+            <p>Menggunakan bahan deterjen pilihan yang aman untuk semua jenis kain.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"></div>
+            <h3>Pickup & Delivery</h3>
+            <p>Kami jemput dan antar langsung ke pintu rumah kamu.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"></div>
+            <h3>Lacak Real-time</h3>
+            <p>Pantau status cucian kamu kapan saja lewat nomor resi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYANAN -->
+    <section class="layanan-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-tag">Layanan Kami</div>
+          <h2 class="section-title">Apa yang <span class="highlight">Kami Tawarkan</span></h2>
+        </div>
+        <div class="layanan-grid">
+          <div class="layanan-card">
+            <div class="layanan-icon">⚖️</div>
+            <h3>Kiloan</h3>
+            <p>Cocok untuk pakaian sehari-hari. Dicuci, disetrika, lipat rapi.</p>
+            <div class="layanan-price">Mulai Rp 8.000 / Kg</div>
+          </div>
+          <div class="layanan-card featured">
+            <div class="featured-badge">Populer</div>
+            <div class="layanan-icon">👔</div>
+            <h3>Satuan Premium</h3>
+            <p>Perlakuan khusus untuk jas, gaun, dan kemeja premium.</p>
+            <div class="layanan-price">Mulai Rp 15.000 / Pcs</div>
+          </div>
+          <div class="layanan-card">
+            <div class="layanan-icon">👟</div>
+            <h3>Cuci Sepatu</h3>
+            <p>Deep cleaning untuk semua jenis bahan sepatu kesayangan kamu.</p>
+            <div class="layanan-price">Mulai Rp 35.000 / Pasang</div>
+          </div>
+          <div class="layanan-card">
+            <div class="layanan-icon">🛋️</div>
+            <h3>Cuci Karpet</h3>
+            <p>Pembersihan mendalam untuk karpet rumah & kantor berbagai fungsi.</p>
+            <div class="layanan-price">Mulai Rp 15.000 / Meter</div>
+          </div>
+          <div class="layanan-card">
+            <div class="layanan-icon">❄️</div>
+            <h3>Dry Clean</h3>
+            <p>Pencucian tanpa air untuk bahan khusus yang sensitif.</p>
+            <div class="layanan-price">Mulai Rp 25.000 / Pcs</div>
+          </div>
+        </div>
+        <div class="cta-center">
+          <button class="btn-primary" onclick="showPage('pesan')">Pesan Sekarang →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 dibuat oleh hafid.</p>
+    </footer>
+  </div>
+
+  <!-- PAGE: PESAN -->
+  <div id="page-pesan" class="page">
+    <section class="form-section">
+      <div class="form-container">
+        <div class="form-header">
+          <div class="form-header-icon"></div>
+          <h2>Form Pemesanan</h2>
+          <p>Isi data di bawah</p>
+        </div>
+        <div class="form-body">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nama Lengkap</label>
+              <input type="text" id="input-nama" placeholder="Contoh: hafid"/>
+            </div>
+            <div class="form-group">
+              <label>No. WhatsApp</label>
+              <input type="text" id="input-wa" placeholder="0812345678910"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Alamat Pickup/Delivery</label>
+            <textarea id="input-alamat" placeholder="Jl. hilang arah" rows="3"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Jenis Layanan</label>
+              <select id="input-layanan">
+                <option value="">-- Pilih Layanan --</option>
+                <option value="Kiloan (Kg)">Kiloan (Kg)</option>
+                <option value="Satuan Premium (Pcs)">Satuan Premium (Pcs)</option>
+                <option value="Cuci Sepatu (Pasang)">Cuci Sepatu (Pasang)</option>
+                <option value="Cuci Karpet (Meter)">Cuci Karpet (Meter)</option>
+                <option value="Dry Clean (Pcs)">Dry Clean (Pcs)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Perkiraan Jumlah/Berat</label>
+              <input type="text" id="input-jumlah" placeholder="Misal: 5"/>
+            </div>
+          </div>
+          <div id="resi-result" class="resi-box hidden">
+            <span class="resi-check"></span>
+            <span>Berhasil! Simpan Resi Anda: <strong id="resi-number"></strong></span>
+          </div>
+          <button class="btn-primary btn-full" onclick="kirimPesanan()">Kirim Pesanan</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"><p>© 2026 dibuat oleh hafid.</p></footer>
+  </div>
+
+  <!-- PAGE: LACAK -->
+  <div id="page-lacak" class="page">
+    <section class="lacak-section">
+      <div class="lacak-container">
+        <h2 class="lacak-title">Lacak Cucian Anda</h2>
+        <p class="lacak-sub">Masukkan nomor resi untuk mengetahui status terkini.</p>
+        <div class="lacak-search">
+          <input type="text" id="input-resi" placeholder="Contoh: LND-1977" />
+          <button class="btn-primary" onclick="cariResi()">Cari Resi</button>
+        </div>
+        <div id="lacak-result" class="lacak-result hidden"></div>
+      </div>
+    </section>
+    <footer class="footer"><p>© 2026 dibuat oleh hafid.</p></footer>
+  </div>
+
+  <!-- PAGE: ADMIN -->
+  <div id="page-admin" class="page">
+
+    <!-- LOGIN ADMIN -->
+    <div id="admin-login" class="admin-login-wrap">
+      <div class="admin-login-card">
+        <div class="admin-login-icon"></div>
+        <h2>Area admin(member dilarang masuk😹)</h2>
+        <p>Masukkan password kominfo</p>
+        <input type="password" id="admin-password" placeholder="Password..." />
+        <div id="login-error" class="login-error hidden">Password salah!</div>
+        <button class="btn-primary btn-full" onclick="adminLogin()">Login ke Dashboard</button>
+      </div>
+    </div>
+
+    <!-- DASHBOARD ADMIN -->
+    <div id="admin-dashboard" class="hidden">
+      <div class="dashboard-header">
+        <div>
+          <h2>Dashboard Manajemen</h2>
+          <p>Kelola pesanan masuk dan update status secara realtime.</p>
+        </div>
+        <div class="dashboard-actions">
+          <button class="btn-ghost" onclick="refreshDashboard()"> Refresh</button>
+          <button class="btn-danger" onclick="adminLogout()">Keluar</button>
+        </div>
+      </div>
+
+      <div class="dashboard-body">
+        <div id="orders-table-wrap">
+          <table class="orders-table" id="orders-table">
+            <thead>
+              <tr>
+                <th>Tgl / Resi</th>
+                <th>Pelanggan</th>
+                <th>Layanan & Est. Harga</th>
+                <th>Status</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="orders-tbody">
+              <!-- Diisi JS -->
+            </tbody>
+          </table>
+          <div id="empty-orders" class="empty-orders hidden">
+            <div style="font-size:3rem">📭</div>
+            <p>Belum ada pesanan masuk.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><p>© 2026 dibuat oleh hafid</p></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
